@@ -1,0 +1,121 @@
+/* Product image adjustment */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+/* Ensure that the row aligns the items to the left */
+.row.g-4 {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Align to the top */
+    flex-wrap: wrap;
+}
+
+/* Ensure card takes only as much height as needed */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: auto; /* Make height auto to fit the content */
+    height: 100%; /* Allow the card to take the full height of the parent container */
+}
+
+/* Adjust the card body to use the available space */
+.card-body {
+    flex-grow: 1; /* Allow the content to grow and fill the available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure the content is spaced evenly */
+}
+
+/* For image inside the card */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* When there's less content in the card, avoid bottom space */
+.card-body p {
+    margin-bottom: 0; /* Avoid bottom margin for paragraphs */
+}
+
+/* Adjust the product card to maintain left alignment */
+.col-6 {
+    max-width: 100%;  /* Ensure each card grows to full width */
+    /* margin-right: 20px; Align cards to the left */
+    margin-bottom: 20px; /* Ensure products are spaced out properly */
+}
+/* Product card settings */
+.card-body {
+    overflow: hidden;
+}
+.card {
+    min-height: 300px; /* Adjust as needed */
+}
+
+/* Center content when there's only one item */
+
+.row.g-4:only-child {
+    justify-content: flex-start;
+}
+/* Pagination styles */
+.pagination .page-item.active .page-link {
+    background-color: #f93; /* Active page background color */
+    border-color: #f93; /* Active page border color */
+    color: white; /* White text color for active page */
+}
+
+.pagination .page-item.active .page-link:hover {
+    background-color: #e87c00; /* Darker shade on hover */
+    border-color: #e87c00; /* Darker border color */
+}
+
+.pagination .page-link:hover {
+    color: #e87c00; /* Darker text color on hover for non-active pages */
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #f93;
+    border-color: #f93;
+    color: white;
+}
+
+.pagination .page-link {
+    color: #f93; /* Pink text color for non-active links */
+}
+
+/* Adjustments for small screens */
+@media (max-width: 576px) {
+    .container12 {
+        margin: 15px; /* Smaller margin on mobile devices */
+    }
+
+    .col-6 {
+        max-width: 100%;
+        margin: 20px; /* Ensure products are spaced out */
+        
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) {
+    .container12 {
+        margin: 15px; /* Slightly larger margin for tablets */
+    }
+
+    .col-6 {
+        max-width: 50%; /* Two products per row on tablet size */
+    }
+}
+
+/* Single product adjustments on small screens */
+@media (max-width: 768px) {
+    .row.g-4 {
+        justify-content: center;
+        margin:10px;
+       
+    }
+    .col-6 {
+        max-width: 90%; /* Single product in the center */
+    }
+}

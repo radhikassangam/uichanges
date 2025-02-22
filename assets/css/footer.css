@@ -1,0 +1,115 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.footer-top{
+    width:100%;
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center; /* Vertical alignment */
+    gap: 20px; /* Spacing between widgets */
+    text-align: left;
+    
+}
+
+.footer-top a {
+    color: #c5c1c1;
+    text-decoration: none;
+    font-size: 12px;
+    list-style: none;
+    padding: 0;
+
+}
+.widget widget-category{
+
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center; /* Vertical alignment */
+    gap: 20px; /* Spacing between widgets */
+}
+.widget-category a {
+    color: #c5c1c1;
+    text-decoration: none;
+    font-size: 12px;
+
+}
+.footer-bottom{
+    width: 100%;
+}
+.footer-middle{
+    width: 100%;
+}
+.widget{
+    list-style: none;
+}
+footer-left{
+    text-align: left;
+}
+footer-right{
+    text-align: right;
+}
+/* Base footer styles remain the same */
+
+/* Adjust for smaller screens (e.g., tablets and smaller) */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center text for smaller screens */
+        gap: 10px; /* Reduce spacing */
+    }
+
+    .footer-links li {
+        display: block; /* Stack links vertically */
+        margin: 5px 0; /* Add spacing between links */
+    }
+
+    .footer-bottom {
+        flex-direction: column; /* Stack left and right sections vertically */
+        text-align: center;
+        padding: 10px 0; /* Reduce padding */
+    }
+
+    .footer-left,
+    .footer-right {
+        flex: none; /* Remove flex grow/shrink */
+        margin-bottom: 10px; /* Add spacing between stacked sections */
+    }
+
+    .footer-right .payment img {
+        width: 120px; /* Scale down image for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Adjust for very small screens (e.g., smartphones) */
+@media (max-width: 480px) {
+    .footer-links li {
+        margin: 3px 0; /* Further reduce spacing */
+    }
+
+    .footer-top {
+        gap: 5px; /* Reduce gap for compact view */
+    }
+
+    .footer-right .payment-label {
+        font-size: 12px; /* Smaller font size for better fit */
+    }
+}

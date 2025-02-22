@@ -1,0 +1,336 @@
+.product-thumb {
+    position: relative;
+}
+.product-thumb img {
+    width: 100px; /* Adjust to fit thumbnail size */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-price .new-price {
+    color: #e55d29;
+    font-size: 1.25rem;
+}
+
+.btn-wishlist {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.btn-wishlist:hover {
+    color: #e55d29;
+}
+
+.product-bm-wrapper{
+    display: flex; /* Enables inline-flex behavior for children */
+    align-items: center; /* Aligns items vertically */
+    gap: 20px; /* Adds spacing between items */
+}
+
+.product-meta {
+    display: inline-flex;
+    flex-direction: column; /* Adjust alignment of inner content */
+    justify-content: center;
+    gap: 5px; /* Space between meta items */
+    color: #000;
+    font-size: 15px;
+    /* font-weight: normal; */
+    line-height: 1.2;
+    letter-spacing: 1;
+    font-family: sans-serif;
+}
+.product-meta a{
+    text-decoration: none;
+    
+}
+.product-meta a:link {
+    color:black;
+  }
+  
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+}
+
+.brand img {
+    /* max-height: 48px; /* Ensures the image fits */
+    /* width: auto; */
+    /* margin-right: 10px; Space between brand and text (if any) */ */
+}
+
+/* Card Container */
+.widget-icon-box {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle card shadow */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Border for card structure */
+    border-radius: 12px; /* Rounded corners */
+    background-color: #fff; /* White background for card */
+    padding: 20px; /* Padding inside the card */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+/* Card Hover Effect */
+.widget-icon-box:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Icon and Content Alignment */
+.icon-box {
+    display: flex; /* Align icon and content side by side */
+    align-items: center; /* Vertically align items */
+    gap: 15px; /* Space between icon and content */
+}
+
+/* Icon Styling */
+.icon-box-icon {
+    font-size: 4rem; /* Adjust icon size */
+    color: #333; /* Neutral color for icon */
+}
+
+/* Content Area Styling */
+.icon-box-content {
+    display: flex;
+    flex-direction: column; /* Stack title and paragraph */
+    gap: 8px; /* Space between title and paragraph */
+    align-items: flex-start; /* Align content to the left */
+}
+
+/* Title Styling */
+.icon-box-title {
+    font-size: 1.2rem; /* Slightly larger title */
+    font-weight: bold; /* Bold title */
+    color: #333; /* Neutral dark color */
+    margin: 0; /* Remove default margin */
+}
+
+/* Paragraph Styling */
+.icon-box-content p {
+    font-size: 1rem; /* Standard paragraph font size */
+    line-height: 1.5; /* Improved readability */
+    color: #555; /* Softer text color */
+    margin: 0; /* Remove default margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .widget-icon-box {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .icon-box-title {
+        font-size: 1rem; /* Smaller title size for mobile */
+    }
+
+    .icon-box-content p {
+        font-size: 0.9rem; /* Adjust text size */
+    }
+}
+
+.ratings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+/* Stars container */
+.stars {
+    display: inline-block;
+    font-size: 1.2rem; /* Adjust the size of the stars */
+    color: #ffd700; /* Gold color for the stars */
+}
+
+/* Empty Star */
+.star {
+    color: #e0e0e0; /* Light gray for empty stars */
+    margin-right: 3px; /* Space between stars */
+}
+
+/* Tooltip */
+.tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show tooltip on hover */
+.ratings-full:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Review link */
+.rating-reviews {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for the review link */
+.rating-reviews:hover {
+    color: #0056b3;
+}
+/* Apply sans-serif font family globally */
+body {
+    font-family: 'Arial', sans-serif; /* You can also use 'Helvetica', 'Roboto', etc. */
+}
+
+/* Product Description Section */
+.product-short-desc {
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: none; /* Remove any border */
+    line-height: .8; /* Adjust line height for better readability */
+    color: #6c757d; /* Set text color to grey */
+}
+
+.product-short-desc ul {
+    list-style: none;
+    padding: 0;
+}
+ .qqqqqqqq {
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-start;
+        /* gap: 10px; Ensures there is space between the elements */
+    }
+.product-short-desc ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center; /* Align items horizontally */
+}
+
+.product-short-desc i {
+    color:grey; /* Green checkmark color */
+    margin-right: 10px; /* Space between tick mark and text */
+    font-size: 1.2rem;
+}
+
+.product-short-desc span {
+    font-weight: bold;
+}
+
+/* Discount Section Styling */
+.widget.widget-icon-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 3px 8px rgba(33, 33, 33, 0.2);
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+.widget.widget-icon-box:hover {
+    box-shadow: 2px 3px 12px rgba(33, 33, 33, 0.3);
+}
+.icon-box-icon {
+    color: #e55d29; /* Icon color */
+}
+.icon-box-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.icon-box-content p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+.icon-box-content p br {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.icon-box-content {
+    margin-left: 20px;
+}
+.icon-box {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Set input field width */
+#Pin_search {
+    width: 300px; /* Fixed width */
+}
+
+/* Ensure button is on a new line */
+
+/* Optional: Add margin to rows for spacing */
+.row.g-2 {
+    margin-bottom: 15px; /* Add space between rows */
+}
+.quantity {
+    width: 50px; /* Adjusts to fill the available space */
+    padding: 10px; /* Add padding for a better look */
+    text-align: center; /* Center the input value */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+
+}
+
+/* Style for the quantity buttons */
+.quantity-plus,
+.quantity-minus {
+    padding: 8px;
+    background-color: #f0f0f0; /* Light background */
+    border: 1px solid #ccc; /* Border around buttons */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 12px; /* Larger icon */
+    color:black;
+ 
+}
+
+.quantity-plus:hover,
+.quantity-minus:hover {
+    background-color: #ddd; /* Slightly darker background on hover */
+}
+.product-thumb::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+
+.product-thumb {
+    position: relative;
+}
+.product-thumb img {
+    width: 100px; /* Adjust to fit thumbnail size */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.product-thumb img:hover {
+    transform: scale(1.1); /* Hover zoom effect */
+}
+
+#swiper-container {
+    display: none;
+    width: 100%;
+    height: 300px;
+}
+
+.product-details h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+

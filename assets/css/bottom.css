@@ -1,0 +1,118 @@
+/* Sticky Header */
+.sticky-content {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 70px;
+    color:white;
+}
+@keyframes mymove {
+    0% { transform: translateX(0); border-color:green; }
+    25%{ transform: translateX(0);border-color: blue; }
+    50% { transform: translateX(10px); border-color: palevioletred; }
+    75%{transform: translateX(10px); border-color: purple;}
+    100% { transform: translateX(0); border-color: coral; }
+}
+
+
+/* Fixed Top */
+.fix-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sticky Header Styling */
+.sticky-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: #000;
+    border-bottom: 1px solid #ddd;
+    color:white;
+    
+}
+.category-dropdown{
+    background-color: #f93;
+    padding:9px;
+}
+/* Dropdown Menu */
+.has-dropdown {
+    position: relative;
+}
+.sticky-header a{
+    text-decoration: none;
+    color:white;
+}
+
+.has-dropdown > a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.has-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.has-dropdown:hover .dropdown-menu {
+    display: block;
+  
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu li {
+    list-style: none;
+   
+  
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    display: block;
+    border-radius: 3px;
+    transition: background 0.2s;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+}
+
+
+
+/* Navigation Items */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+@media (max-width: 768px) {
+    .header-bottom {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .header-bottom {
+        display: none;
+    }
+}

@@ -1,0 +1,136 @@
+.button-custom {
+
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+.breadcrumb-nav .breadcrumb {
+    display: flex;
+    justify-content: flex-start; /* Aligns breadcrumb to the left */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+   
+}
+.containerbread{
+    text-align: left; 
+    margin-left:70px;
+   font-size: 20px;
+ 
+}
+
+.breadcrumb-nav{
+    padding-top: 50px;
+   
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.breadcrumb-nav .breadcrumb li {
+    margin-right: 10px;
+}
+
+.breadcrumb-nav .breadcrumb li:last-child {
+    margin-right: 0;
+}
+.headerhead {
+   
+    height: 150px;
+    background-color: #fef1da61;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+    text-align: center;      /* Center the text inside */
+}
+.containerbread a {
+    text-decoration: none;
+    color: rgb(64, 63, 63);
+}
+
+.button-group {
+    display: flex; /* Arrange buttons horizontally */
+    gap: 10px; /* Add spacing between buttons */
+    margin-top: 5px;
+}
+
+.button-group button,
+.button-group a {
+    width: 50%;
+    display: block;
+    text-decoration: none; /* Remove underline for links */
+    color: white; /* Text color */
+    padding: 10px 15px;
+    border-radius: 20px; /* Elliptical shape */
+    border: none;
+    cursor: pointer;
+}
+.form-group,title,fa-eye{
+    margin-top:30px;
+}
+.button-group button:hover,
+.button-group a:hover {
+    background-color: #e86; /* Darker shade for hover effect */
+}
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Optional: creates space between the buttons */
+}
+
+.button-group .btn {
+    flex: 1;
+    text-align: center; /* Ensures text inside buttons is centered */
+    margin: 0 5px; /* Optional: adds some space between the buttons */
+}
+
+.btn-ellipse1 {
+    width: 50%; /* Ensures each button takes up half of the parent container */
+    max-width: 50%; /* Ensures each button doesn't exceed half of the parent container */
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+@media (max-width: 768px) {
+    /* Adjust breadcrumb container */
+    .containerbread {
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+   
+    /* Adjust header height and padding */
+    .headerhead {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust breadcrumb font size and margin */
+    .containerbread {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    /* Stack the button group vertically with more space */
+  
+
+    /* Adjust header height further */
+    .headerhead {
+        height: 100px;
+    }
+
+    /* Adjust input fields and labels */
+    .form-group label,
+    .form-group input {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+

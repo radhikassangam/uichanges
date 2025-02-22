@@ -1,0 +1,38 @@
+
+
+.tab {
+    margin-top: 20px; /* Spacing above the tabs */
+}
+
+.nav-tabs {
+    padding: 0; /* Remove padding for the tab list */
+}
+
+.nav-tabs .nav-item .nav-link {
+    font-size: 1.5rem; /* Set the font size */
+    font-weight: 600; /* Slightly bold font */
+    color: #333; /* Default tab link color */
+    text-transform: capitalize; /* Capitalizes tab text */
+    padding: 1rem 1.5rem; /* Adds padding inside the links */
+    text-decoration: none; /* Removes underlines from links */
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    color: #000; /* Active tab color */
+    font-weight: 700; /* Bold font for active tab */
+    border-bottom: 2px solid #000; /* Adds underline to active tab */
+}
+
+.nav-tabs .nav-item a:hover {
+    color: #666; /* Color change on hover */
+    text-decoration: underline; /* Optional: underline on hover */
+}
+.mb-10 {
+ 
+    margin:40px;
+  }
+  
+  .pb-1 {
+    padding-bottom: 1rem;
+  }
+  

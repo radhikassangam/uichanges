@@ -1,0 +1,70 @@
+.breadcrumb-nav .breadcrumb {
+    display: flex;
+    justify-content: flex-start; /* Aligns breadcrumb to the left */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+   
+}
+.containerbread{
+    text-align: left; 
+    margin-left:70px;
+   font-size: 20px;
+ 
+}
+
+.breadcrumb-nav{
+    padding-top: 50px;
+   
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.breadcrumb-nav .breadcrumb li {
+    margin-right: 10px;
+}
+
+.breadcrumb-nav .breadcrumb li:last-child {
+    margin-right: 0;
+}
+.headerhead {
+   
+    height: 150px;
+    background-color: #fef1da61;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+    text-align: center;      /* Center the text inside */
+}
+.containerbread a {
+    text-decoration: none;
+    color: rgb(64, 63, 63);
+}
+
+
+
+.regform {
+    align-items: center;    
+    height: 500px;
+    width: 800px;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.form-group,title{
+    margin-top:20px;
+}
+.button-custom {
+
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-custom:hover {
+    background-color: #e68200; /* Darker shade for hover */
+}
